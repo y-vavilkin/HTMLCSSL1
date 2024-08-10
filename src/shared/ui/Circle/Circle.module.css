@@ -1,0 +1,20 @@
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.circle img {
+  width: 55%;
+  height: 55%;
+  position: absolute;
+}
+
+.circle:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}

@@ -33,7 +33,7 @@ export const Button = ({
         backgroundColor: isTransparent ? "transparent" : backgroundColor,
         color,
         border: "none",
-        borderRadius: "3px",
+        borderRadius: "2px",
         cursor: "pointer",
         fontSize,
         fontWeight,

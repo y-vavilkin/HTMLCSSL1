@@ -1,7 +1,9 @@
-import { Header } from "../widgets";
+import { MainPage } from "../pages";
 
 export const App = () => {
-  return <>
-    <Header/>
-  </>;
+  return (
+    <>
+      <MainPage />
+    </>
+  );
 };

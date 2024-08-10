@@ -1,0 +1,20 @@
+input {
+  outline: none;
+  box-sizing: border-box;
+  padding: 0 0 0 16px;
+  transition: transform 0.3s ease;
+}
+
+input:hover {
+  transform: translateY(-2px);
+}
+
+input::placeholder {
+  color: var(--background-color-input);
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 100% !important;
+  }
+}

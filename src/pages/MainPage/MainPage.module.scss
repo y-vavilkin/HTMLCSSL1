@@ -1,0 +1,25 @@
+.page {
+  background-color: var(--background-page-black);
+  font-family: "Inter", sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 80px;
+    max-width: 1104px;
+    width: 80%;
+
+    .backgroundImage {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: auto;
+      height: auto;
+      z-index: 0;
+    }
+  }
+}

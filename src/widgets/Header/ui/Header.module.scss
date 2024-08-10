@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+
+  .actionsDesktop {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    .actionsDesktop {
+      display: none;
+    }
+  }
+}
