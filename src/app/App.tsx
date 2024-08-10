@@ -1,3 +1,7 @@
+import { Header } from "../widgets";
+
 export const App = () => {
-  return <></>;
+  return <>
+    <Header/>
+  </>;
 };
