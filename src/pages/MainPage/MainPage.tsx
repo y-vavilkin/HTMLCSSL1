@@ -1,4 +1,4 @@
-import { Header, Greeting, Footer } from "../../widgets";
+import { Header, Greeting, Footer, Features } from "../../widgets";
 
 import classes from "./MainPage.module.scss";
 
@@ -13,6 +13,7 @@ export const MainPage = () => {
         />
         <Header />
         <Greeting />
+        <Features />
         <Footer />
       </div>
     </div>
