@@ -7,7 +7,9 @@
   --text-color-secondary: #9ba9b4;
   --background-color-divider: #cccccc;
   --background-color-user-card: #25282c;
-  --background-color-divider: #33363A;
+  --background-color-divider: #33363a;
+  --background-color-tag: #c6f6d5;
+  --text-color-tag: #36a269;
 }
 
 * {
@@ -16,4 +18,8 @@
   font-optical-sizing: auto;
   font-size: 14px;
   font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }

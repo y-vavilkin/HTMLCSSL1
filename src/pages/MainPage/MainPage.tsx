@@ -1,4 +1,5 @@
 import { Header, Greeting, Footer, Features, Users } from "../../widgets";
+import { Products } from "../../widgets/Products/ui/Products";
 
 import classes from "./MainPage.module.scss";
 
@@ -14,6 +15,7 @@ export const MainPage = () => {
         <Header />
         <Greeting />
         <Features />
+        <Products />
         <Users />
         <Footer />
       </div>

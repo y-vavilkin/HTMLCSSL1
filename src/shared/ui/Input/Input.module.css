@@ -13,7 +13,7 @@ input::placeholder {
   color: var(--background-color-input);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   input {
     width: 100% !important;
   }
