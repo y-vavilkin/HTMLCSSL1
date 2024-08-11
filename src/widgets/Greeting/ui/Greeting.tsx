@@ -1,4 +1,4 @@
-import { Button } from "../../../shared";
+import { Button } from "@shared/ui";
 import { GRAY, LIGHT_PURPLE, WHITE } from "../const";
 
 import classes from "./Greeting.module.scss";

@@ -1,4 +1,4 @@
-import { Button, Burger, Logo } from "../../../shared";
+import { Button, Burger, Logo } from "@shared/ui";
 import { LIGHT_PURPLE } from "../const";
 
 import classes from "./Header.module.scss";

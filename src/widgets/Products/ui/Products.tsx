@@ -1,4 +1,4 @@
-import { ItemList, Divider } from "../../../shared/ui";
+import { ItemList, Divider } from "@shared/ui";
 import { data, GRAY } from "../const";
 
 import classes from "./Products.module.scss";

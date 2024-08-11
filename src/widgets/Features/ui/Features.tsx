@@ -1,4 +1,4 @@
-import { Circle } from "../../../shared/ui";
+import { Circle } from "@shared/ui";
 import { data, LIGHT_PURPLE } from "../const";
 
 import classes from "./Feature.module.scss";

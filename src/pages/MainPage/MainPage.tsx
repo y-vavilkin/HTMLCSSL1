@@ -1,11 +1,4 @@
-import {
-  Header,
-  Greeting,
-  Footer,
-  Products,
-  Features,
-  Users,
-} from "../../widgets";
+import { Header, Greeting, Footer, Products, Features, Users } from "@widgets";
 
 import classes from "./MainPage.module.scss";
 

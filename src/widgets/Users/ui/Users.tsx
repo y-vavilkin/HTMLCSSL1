@@ -1,4 +1,4 @@
-import { UserCard } from "../../../shared/ui";
+import { UserCard } from "@shared/ui";
 import { data } from "../const";
 
 import classes from "./Users.module.scss";

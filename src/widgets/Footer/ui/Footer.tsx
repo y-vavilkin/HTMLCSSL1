@@ -1,4 +1,4 @@
-import { Button, Circle, Input, Logo } from "../../../shared/ui";
+import { Button, Circle, Input, Logo } from "@shared/ui";
 import {
   columns,
   GRAY,
