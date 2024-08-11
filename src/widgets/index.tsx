@@ -1,4 +1,5 @@
 export * from "./Header";
-export * from "./Footer";
 export * from "./Greeting";
 export * from "./Features";
+export * from "./Users";
+export * from "./Footer";

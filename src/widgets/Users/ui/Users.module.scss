@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+
+    .title {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 50px;
+      color: var(--text-color-primary);
+    }
+
+    .subtitle {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: var(--text-color-secondary);
+    }
+  }
+
+  .users {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

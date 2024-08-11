@@ -5,6 +5,9 @@
   --background-color-footer-row-1: #5d5dff;
   --text-color-primary: #d9e3ea;
   --text-color-secondary: #9ba9b4;
+  --background-color-divider: #cccccc;
+  --background-color-user-card: #25282c;
+  --background-color-divider: #33363A;
 }
 
 * {

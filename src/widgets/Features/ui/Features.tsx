@@ -16,9 +16,9 @@ export const Features = () => {
         </p>
       </div>
       <div className={classes.data}>
-        {data.map((item) => {
+        {data.map((item, index) => {
           return (
-            <div className={classes.item}>
+            <div key={index} className={classes.item}>
               <Circle
                 src={item.image}
                 backgroundColor={LIGHT_PURPLE}

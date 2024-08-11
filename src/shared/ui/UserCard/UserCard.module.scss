@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 20px;
+  width: 352px;
+  padding: 24px;
+  background-color: var(--background-color-user-card);
+
+  .avatar {
+    position: relative;
+    width: 60px;
+
+    .avatarImage {
+      display: block;
+    }
+
+    .quotationMarks {
+      position: absolute;
+      right: 0;
+      width: 24px;
+      height: 18px;
+      z-index: 1;
+    }
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--text-color-secondary);
+  }
+
+  .bio {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    .name {
+      color: var(--text-color-primary);
+    }
+
+    .divider {
+      color: var(--background-color-divider);
+    }
+
+    .status {
+      color: var(--background-color-footer-row-1);
+      transition: color 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        color: var(--background-color-input);
+      }
+    }
+  }
+}
