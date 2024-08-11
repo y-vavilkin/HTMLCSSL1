@@ -1,6 +1,6 @@
 import classes from "./Button.module.css";
 
-interface ButtonProps {
+interface IButtonProps {
   width?: string;
   height?: string;
   backgroundColor?: string;
@@ -12,17 +12,28 @@ interface ButtonProps {
   fontWeight?: string;
 }
 
+const INITIAL_VALUE = {
+  WIDTH: "100px",
+  HEIGHT: "40px",
+  BACKGROUND_COLOR: "white",
+  COLOR: "black",
+  IS_TRANSPARENT: false,
+  FONT_SIZE: "16px",
+  FONT_WEIGHT: "400",
+  TRANSPARENT: "transparent",
+};
+
 export const Button = ({
-  width = "100px",
-  height = "40px",
-  backgroundColor = "white",
-  color = "black",
-  isTransparent = false,
-  fontSize = "16px",
-  fontWeight = "500",
+  width = INITIAL_VALUE.WIDTH,
+  height = INITIAL_VALUE.HEIGHT,
+  fontSize = INITIAL_VALUE.FONT_SIZE,
+  fontWeight = INITIAL_VALUE.FONT_WEIGHT,
+  color = INITIAL_VALUE.COLOR,
+  backgroundColor = INITIAL_VALUE.BACKGROUND_COLOR,
+  isTransparent = INITIAL_VALUE.IS_TRANSPARENT,
   children,
   onClick,
-}: ButtonProps) => {
+}: IButtonProps) => {
   return (
     <button
       onClick={onClick}
@@ -30,11 +41,10 @@ export const Button = ({
       style={{
         width,
         height,
-        backgroundColor: isTransparent ? "transparent" : backgroundColor,
+        backgroundColor: isTransparent
+          ? INITIAL_VALUE.TRANSPARENT
+          : backgroundColor,
         color,
-        border: "none",
-        borderRadius: "2px",
-        cursor: "pointer",
         fontSize,
         fontWeight,
       }}

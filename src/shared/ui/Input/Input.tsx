@@ -1,5 +1,3 @@
-import { WHITE, GRAY } from "../../const";
-
 import "./Input.module.css";
 
 interface InputProps {
@@ -14,16 +12,21 @@ interface InputProps {
   backgroundColor?: string;
 }
 
+const INITIAL_VALUE = {
+  WHITE: "#ffffff",
+  GRAY: "#33363a",
+}
+
 export const Input = ({
-  placeholder,
   type,
-  width = "100%",
-  height = "40px",
-  fontSize = "16px",
-  fontWeight = "400",
-  color = WHITE,
-  borderColor = GRAY,
-  backgroundColor = WHITE,
+  placeholder,
+  width,
+  height,
+  fontSize,
+  fontWeight,
+  color = INITIAL_VALUE.WHITE,
+  borderColor = INITIAL_VALUE.GRAY,
+  backgroundColor = INITIAL_VALUE.WHITE,
 }: InputProps) => {
   return (
     <input
@@ -37,8 +40,6 @@ export const Input = ({
         backgroundColor,
         fontSize,
         fontWeight,
-        borderWidth: "1px",
-        borderStyle: "solid",
       }}
     />
   );
