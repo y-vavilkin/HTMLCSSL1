@@ -15,7 +15,6 @@ export const MainPage = () => {
       <div className={classes.content}>
         <img
           src="/background/startPage.svg"
-          alt=""
           className={classes.backgroundImage}
         />
         <Header />

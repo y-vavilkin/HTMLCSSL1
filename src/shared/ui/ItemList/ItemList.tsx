@@ -1,22 +1,20 @@
-import { ListItem } from "../../../widgets/Products";
-
 import classes from "./ItemList.module.scss";
 
-interface IItemListProps {
+interface IItemListProps<T> {
   image: string;
   subtitle: string;
   title: string;
   description: string;
-  list: ListItem[];
+  list: T[];
 }
 
-export const ItemList = ({
+export const ItemList = <T extends { text: string }>({
   image,
   subtitle,
   title,
   description,
   list,
-}: IItemListProps) => {
+}: IItemListProps<T>) => {
   return (
     <div className={classes.container}>
       <div className={classes.left}>

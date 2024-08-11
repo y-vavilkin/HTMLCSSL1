@@ -1,5 +1,6 @@
 import { Button } from "../../../shared";
 import { GRAY, LIGHT_PURPLE, WHITE } from "../const";
+
 import classes from "./Greeting.module.scss";
 
 export const Greeting = () => {

@@ -1,6 +1,6 @@
 import "./Input.module.css";
 
-interface InputProps {
+interface IInputProps {
   placeholder?: string;
   type?: string;
   width?: string;
@@ -27,7 +27,7 @@ export const Input = ({
   color = INITIAL_VALUE.WHITE,
   borderColor = INITIAL_VALUE.GRAY,
   backgroundColor = INITIAL_VALUE.WHITE,
-}: InputProps) => {
+}: IInputProps) => {
   return (
     <input
       type={type}

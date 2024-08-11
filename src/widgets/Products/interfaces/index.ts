@@ -1,4 +1,4 @@
-export type ListItem = {
+type ListItem = {
   text: string;
 };
 
