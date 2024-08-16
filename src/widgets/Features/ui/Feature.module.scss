@@ -1,27 +1,30 @@
-.container {
+@mixin typography($size, $weight, $line-height, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin flex-column($gap) {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: $gap;
+}
+
+.container {
+  @include flex-column(30px);
 
   .description {
-    display: flex;
-    flex-direction: column;
-    gap: 44px;
+    @include flex-column(44px);
 
     .title {
-      font-weight: 800;
-      font-size: 40px;
-      line-height: 50px;
+      @include typography(40px, 800, 50px, var(--text-color-primary));
       text-align: center;
-      color: var(--text-color-primary);
     }
 
     .text {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 30px;
+      @include typography(20px, 400, 30px, var(--text-color-secondary));
       text-align: center;
-      color: var(--text-color-secondary);
     }
   }
 
@@ -32,25 +35,17 @@
     gap: 30px;
 
     .item {
-      display: flex;
-      flex-direction: column;
+      @include flex-column(16px);
       align-items: center;
       text-align: center;
-      gap: 16px;
       width: 325px;
 
       .title {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 34px;
-        color: var(--text-color-primary);
+        @include typography(24px, 700, 34px, var(--text-color-primary));
       }
 
       .description {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 27px;
-        color: var(--text-color-secondary);
+        @include typography(18px, 400, 27px, var(--text-color-secondary));
       }
     }
   }
