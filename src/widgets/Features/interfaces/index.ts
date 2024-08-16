@@ -1,4 +1,4 @@
-export type TData = {
+export type TFeature = {
   image: string;
   title: string;
   description: string;

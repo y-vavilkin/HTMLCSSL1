@@ -16,11 +16,11 @@ export const ItemList = <T extends { text: string }>({
   list,
 }: IItemListProps<T>) => {
   return (
-    <div className={classes.container}>
-      <div className={classes.left}>
-        <p className={classes.subtitle}>{subtitle}</p>
-        <p className={classes.title}>{title}</p>
-        <p className={classes.text}>{description}</p>
+    <div className={classes.container} tabIndex={0}>
+      <section className={classes.left}>
+        <h4 className={classes.subtitle}>{subtitle}</h4>
+        <h1 className={classes.title}>{title}</h1>
+        <h2 className={classes.text}>{description}</h2>
         <div className={classes.list}>
           {list.map((item, index) => {
             return (
@@ -31,10 +31,10 @@ export const ItemList = <T extends { text: string }>({
             );
           })}
         </div>
-      </div>
-      <div className={classes.right}>
+      </section>
+      <section className={classes.right}>
         <img src={image} alt="image" />
-      </div>
+      </section>
     </div>
   );
 };

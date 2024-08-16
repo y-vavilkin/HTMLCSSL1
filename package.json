@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://y-vavilkin.github.io/HTMLCSSL1",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

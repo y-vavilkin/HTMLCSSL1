@@ -1,8 +1,8 @@
-import { TData } from "../interfaces";
+import { TFeature } from "../interfaces";
 
 export const LIGHT_PURPLE = "#5D5DFF";
 
-export const data: TData[] = [
+export const features: TFeature[] = [
   {
     image: "data/image1.svg",
     title: "Instant Features",

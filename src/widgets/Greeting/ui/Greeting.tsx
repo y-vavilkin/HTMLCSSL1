@@ -5,13 +5,13 @@ import classes from "./Greeting.module.scss";
 
 export const Greeting = () => {
   return (
-    <div className={classes.container}>
+    <section className={classes.container}>
       <div className={classes.description}>
-        <p className={classes.title}>Landing template for startups</p>
-        <p className={classes.text}>
+        <h1 className={classes.title}>Landing template for startups</h1>
+        <h3 className={classes.text}>
           Our landing page template works on all devices, so you only have to
           set it up once, and get beautiful results forever.
-        </p>
+        </h3>
         <div className={classes.actions}>
           <Button
             backgroundColor={LIGHT_PURPLE}
@@ -36,10 +36,10 @@ export const Greeting = () => {
       <div className={classes.videoContainer}>
         <div className={classes.video}>
           <img className={classes.background} src="images/video.png" />
-          <img className={classes.play} src="icons/play.svg" />
+          <img className={classes.play} src="icons/play.svg" tabIndex={0} />
         </div>
         <img className={classes.underVideo} src="background/underVideo.svg" />
       </div>
-    </div>
+    </section>
   );
 };

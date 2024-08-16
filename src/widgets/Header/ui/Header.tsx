@@ -5,9 +5,9 @@ import classes from "./Header.module.scss";
 
 export const Header = () => {
   return (
-    <div className={classes.container}>
+    <header className={classes.container}>
       <Logo />
-      <div className={classes.actionsDesktop}>
+      <section className={classes.actionsDesktop}>
         <Button
           width="96px"
           height="40px"
@@ -24,8 +24,8 @@ export const Header = () => {
         >
           Sign up
         </Button>
-      </div>
+      </section>
       <Burger />
-    </div>
+    </header>
   );
 };

@@ -32,6 +32,7 @@ export const Input = ({
     <input
       type={type}
       placeholder={placeholder}
+      tabIndex={0}
       style={{
         width,
         height,

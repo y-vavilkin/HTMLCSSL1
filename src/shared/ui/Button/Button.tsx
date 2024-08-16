@@ -38,6 +38,7 @@ export const Button = ({
     <button
       onClick={onClick}
       className={classes.button}
+      tabIndex={0}
       style={{
         width,
         height,

@@ -4,7 +4,7 @@ import classes from "./MainPage.module.scss";
 
 export const MainPage = () => {
   return (
-    <div className={classes.page}>
+    <section className={classes.page}>
       <div className={classes.content}>
         <img
           src="/background/startPage.svg"
@@ -17,6 +17,6 @@ export const MainPage = () => {
         <Users />
         <Footer />
       </div>
-    </div>
+    </section>
   );
 };
