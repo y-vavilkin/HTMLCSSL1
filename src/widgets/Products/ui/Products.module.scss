@@ -5,7 +5,7 @@
 
   .divider {
     height: 1px;
-    background-color: var(--background-color-divider);
+    background-color: var(--light-black);
   }
 
   .start {
@@ -15,19 +15,19 @@
 
     .tag {
       @include flex-center(center, center);
-      @include typography(14px, 600, 22px, var(--text-color-tag));
+      @include typography(14px, 600, 22px, var(--green));
       width: 186px;
       height: 30px;
       border-radius: 70px;
-      background-color: var(--background-color-tag);
+      background-color: var(--light-green);
     }
 
     .title {
-      @include typography(40px, 800, 50px, var(--text-color-primary));
+      @include typography(40px, 800, 50px, var(--light-gray));
     }
 
     .text {
-      @include typography(20px, 400, 30px, var(--text-color-secondary));
+      @include typography(20px, 400, 30px, var(--gray));
     }
   }
 

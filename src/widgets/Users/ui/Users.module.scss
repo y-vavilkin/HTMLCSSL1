@@ -8,11 +8,11 @@
     text-align: center;
 
     .title {
-      @include typography(40px, 800, 50px, var(--text-color-primary));
+      @include typography(40px, 800, 50px, var(--light-gray));
     }
 
     .subtitle {
-      @include typography(20px, 400, 30px, var(--text-color-secondary));
+      @include typography(20px, 400, 30px, var(--gray));
     }
   }
 

@@ -7,12 +7,12 @@
     @include flex-column(44px);
 
     .title {
-      @include typography(40px, 800, 50px, var(--text-color-primary));
+      @include typography(40px, 800, 50px, var(--light-gray));
       text-align: center;
     }
 
     .text {
-      @include typography(20px, 400, 30px, var(--text-color-secondary));
+      @include typography(20px, 400, 30px, var(--gray));
       text-align: center;
     }
   }
@@ -31,17 +31,17 @@
       transition: transform 0.3s ease;
 
       .image {
-        background-color: var(--background-color-footer-row-1);
+        background-color: var(--dark-blue);
         width: 64px;
         height: 64px;
       }
 
       .title {
-        @include typography(24px, 700, 34px, var(--text-color-primary));
+        @include typography(24px, 700, 34px, var(--light-gray));
       }
 
       .description {
-        @include typography(18px, 400, 27px, var(--text-color-secondary));
+        @include typography(18px, 400, 27px, var(--gray));
       }
 
       &:hover, &:focus {

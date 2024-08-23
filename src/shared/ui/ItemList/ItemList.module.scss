@@ -14,21 +14,21 @@
       font-weight: 400;
       font-size: 20px;
       line-height: 30px;
-      color: var(--background-color-footer-row-1);
+      color: var(--dark-blue);
     }
 
     .title {
       font-weight: 700;
       font-size: 32px;
       line-height: 42px;
-      color: var(--text-color-primary);
+      color: var(--light-gray);
     }
 
     .text {
       font-weight: 400;
       font-size: 20px;
       line-height: 30px;
-      color: var(--text-color-secondary);
+      color: var(--gray);
     }
 
     .list {
@@ -44,7 +44,7 @@
           font-weight: 400px;
           font-size: 18px;
           line-height: 27px;
-          color: var(--text-color-secondary);
+          color: var(--gray);
         }
       }
     }

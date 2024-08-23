@@ -17,7 +17,7 @@
 
   .block1 {
     @include flex-center-gap(row, space-between, center, 8px);
-    background-color: var(--background-color-footer-row-1);
+    background-color: var(--dark-blue);
     height: 206px;
     padding: 0 48px;
 
@@ -43,8 +43,8 @@
       .input {
         width: 320px;
         height: 48px;
-        background-color: var(--background-color-footer-row-1);
-        border-color: var(--aaa);
+        background-color: var(--dark-blue);
+        border-color: var(--blue);
         font-size: 16px;
         font-weight: 400;
       }
@@ -53,7 +53,7 @@
         font-size: 16px;
         width: 139px;
         height: 48px;
-        color: var(--background-color-footer-row-1);
+        color: var(--dark-blue);
         background-color: var(--white);
 
         &:hover,
@@ -77,7 +77,7 @@
         width: 350px;
 
         .description {
-          @include typography(16px, normal, 24px, var(--text-color-secondary));
+          @include typography(16px, normal, 24px, var(--gray));
         }
       }
 
@@ -89,11 +89,11 @@
           @include flex-center-gap(column, flex-start, stretch, 4px);
 
           .title {
-            @include typography(14px, 500, 22px, var(--text-color-primary));
+            @include typography(14px, 500, 22px, var(--light-gray));
           }
 
           .link {
-            @include typography(14px, 400, 22px, var(--text-color-secondary));
+            @include typography(14px, 400, 22px, var(--gray));
             transition: transform 0.3s ease;
 
             &:hover,
@@ -110,7 +110,7 @@
       @include flex-center-gap(row, space-between, center);
 
       p {
-        @include typography(14px, 500, 22px, var(--text-color-secondary));
+        @include typography(14px, 500, 22px, var(--gray));
       }
 
       .links {
@@ -121,7 +121,7 @@
           transition: transform 0.3s ease;
 
           .image {
-            background-color: var(--background-color-user-card);
+            background-color: var(--black);
             width: 32px;
             height: 32px;
           }
@@ -176,7 +176,7 @@
           .column {
             align-items: center;
 
-            .link:hover {
+            .link:hover, .link:focus {
               transform: translateY(-3px);
             }
           }

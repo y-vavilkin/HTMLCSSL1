@@ -1,16 +1,19 @@
 :root {
   --white: #ffffff;
-  --background-page-black: #151719;
-  --background-color-input: #ababff;
-  --background-color-footer-row-1: #5d5dff;
-  --text-color-primary: #d9e3ea;
-  --text-color-secondary: #9ba9b4;
-  --background-color-divider: #cccccc;
-  --background-color-user-card: #25282c;
-  --background-color-divider: #33363a;
-  --background-color-tag: #c6f6d5;
-  --text-color-tag: #36a269;
-  --aaa: #8D8DFF;
+
+  --black: #25282c;
+  --light-black: #33363a;
+  --dark-black: #151719;
+
+  --blue: #8D8DFF;
+  --light-blue: #ababff;
+  --dark-blue: #5d5dff;
+
+  --gray: #9ba9b4;
+  --light-gray: #d9e3ea;
+
+  --green: #36a269;
+  --light-green: #c6f6d5;
 }
 
 * {

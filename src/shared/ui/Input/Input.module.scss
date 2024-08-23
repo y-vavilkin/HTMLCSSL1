@@ -9,12 +9,13 @@ input {
   font-weight: 400;
   border: 1px solid;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     transform: translateY(-2px);
   }
 
   &::placeholder {
-    color: var(--background-color-input);
+    color: var(--light-blue);
   }
 
   @media (max-width: 620px) {

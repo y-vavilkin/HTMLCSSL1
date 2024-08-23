@@ -5,12 +5,12 @@
   gap: 20px;
   width: 352px;
   padding: 24px;
-  background-color: var(--background-color-user-card);
+  background-color: var(--black);
   transition: transform 0.3s ease;
 
   .divider {
     height: 1px;
-    background-color: var(--background-color-divider);
+    background-color: var(--light-black);
   }
 
   .avatar {
@@ -34,7 +34,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    color: var(--text-color-secondary);
+    color: var(--gray);
   }
 
   .bio {
@@ -43,20 +43,20 @@
     line-height: 24px;
 
     .name {
-      color: var(--text-color-primary);
+      color: var(--light-gray);
     }
 
     .dividerSymbol {
-      color: var(--background-color-divider);
+      color: var(--light-black);
     }
 
     .status {
-      color: var(--background-color-footer-row-1);
+      color: var(--dark-blue);
       transition: color 0.3s ease;
 
       &:hover {
         cursor: pointer;
-        color: var(--background-color-input);
+        color: var(--light-blue);
       }
     }
   }
