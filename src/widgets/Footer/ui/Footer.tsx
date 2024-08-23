@@ -1,12 +1,5 @@
 import { Button, Circle, Input, Logo } from "@shared/ui";
-import {
-  columns,
-  GRAY,
-  LIGHT_PURPLE,
-  PURPLE,
-  SKY_PURPLE,
-  socialIcons,
-} from "../const";
+import { columns, socialIcons } from "../const";
 
 import classes from "./Footer.module.scss";
 
@@ -29,21 +22,9 @@ export const Footer = () => {
           <Input
             type="email"
             placeholder="Your best email..."
-            width="320px"
-            height="48px"
-            backgroundColor={PURPLE}
-            borderColor={SKY_PURPLE}
-            fontSize="16px"
-            fontWeight="400"
+            className={classes.input}
           />
-          <Button
-            fontSize="16px"
-            width="139px"
-            height="48px"
-            color={LIGHT_PURPLE}
-          >
-            Subscribe
-          </Button>
+          <Button className={classes.subscribe}>Subscribe</Button>
         </div>
       </div>
       <div className={classes.block2}>
@@ -75,12 +56,8 @@ export const Footer = () => {
           </p>
           <div className={classes.links}>
             {socialIcons.map((icon, index) => (
-              <a href="/" tabIndex={0}>
-                <Circle
-                  key={index}
-                  src={`icons/${icon}.svg`}
-                  backgroundColor={GRAY}
-                />
+              <a href="/" tabIndex={0} key={index}>
+                <Circle src={`icons/${icon}.svg`} className={classes.image} />
               </a>
             ))}
           </div>

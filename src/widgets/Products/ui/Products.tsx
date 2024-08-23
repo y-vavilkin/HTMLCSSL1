@@ -1,12 +1,12 @@
 import { ItemList, Divider } from "@shared/ui";
-import { data, GRAY } from "../const";
+import { data } from "../const";
 
 import classes from "./Products.module.scss";
 
 export const Products = () => {
   return (
     <section className={classes.container}>
-      <Divider backgroundColor={GRAY} height="1px" />
+      <Divider className={classes.divider} />
       <section className={classes.start}>
         <p className={classes.tag}>Reach goals that matter</p>
         <h1 className={classes.title}>One product, unlimited solutions</h1>
@@ -29,7 +29,7 @@ export const Products = () => {
           );
         })}
       </section>
-      <Divider backgroundColor={GRAY} height="1px" />
+      <Divider className={classes.divider} />
     </section>
   );
 };

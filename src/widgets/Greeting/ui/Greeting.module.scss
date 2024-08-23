@@ -1,16 +1,4 @@
-@mixin typography($size, $weight, $line-height, $color) {
-  font-size: $size;
-  font-weight: $weight;
-  line-height: $line-height;
-  color: $color;
-}
-
-@mixin flex-center-column($gap: 0) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: $gap;
-}
+@import "src/mixins.scss";
 
 .container {
   @include flex-center-column(64px);
@@ -32,6 +20,22 @@
     .actions {
       display: flex;
       gap: 12px;
+
+      .freeTrial {
+        background-color: var(--background-color-footer-row-1);
+        font-size: 16px;
+        width: 167px;
+        height: 48px;
+        color: var(--white);
+      }
+
+      .learnMore {
+        background-color: var(--background-color-divider);
+        font-size: 16px;
+        width: 167px;
+        height: 48px;
+        color: var(--white);
+      }
     }
   }
 
@@ -57,7 +61,12 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        pointer-events: none;
+        transition: transform 0.3s ease;
+
+        &:hover, &:focus {
+          cursor: pointer;
+          transform: translate(-50%, -50%) translateY(-10px);
+        }
       }
     }
 

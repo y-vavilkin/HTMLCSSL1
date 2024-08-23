@@ -1,5 +1,4 @@
 import { Button } from "@shared/ui";
-import { GRAY, LIGHT_PURPLE, WHITE } from "../const";
 
 import classes from "./Greeting.module.scss";
 
@@ -13,24 +12,8 @@ export const Greeting = () => {
           set it up once, and get beautiful results forever.
         </h3>
         <div className={classes.actions}>
-          <Button
-            backgroundColor={LIGHT_PURPLE}
-            fontSize="16px"
-            width="167px"
-            height="48px"
-            color={WHITE}
-          >
-            Start free trial
-          </Button>
-          <Button
-            backgroundColor={GRAY}
-            fontSize="16px"
-            width="167px"
-            height="48px"
-            color={WHITE}
-          >
-            Learn more
-          </Button>
+          <Button className={classes.freeTrial}>Start free trial</Button>
+          <Button className={classes.learnMore}>Learn more</Button>
         </div>
       </div>
       <div className={classes.videoContainer}>

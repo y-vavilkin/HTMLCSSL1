@@ -9,8 +9,6 @@ interface IUserCard {
   status: string;
 }
 
-const GRAY = "#33363A";
-
 export const UserCard = ({ image, description, name, status }: IUserCard) => {
   return (
     <div className={classes.container} tabIndex={0}>
@@ -22,10 +20,10 @@ export const UserCard = ({ image, description, name, status }: IUserCard) => {
         <img className={classes.avatarImage} src={image} alt="avatar" />
       </section>
       <p className={classes.description}>{description}</p>
-      <Divider height="1px" backgroundColor={GRAY} />
+      <Divider className={classes.divider} />
       <section className={classes.bio}>
         <span className={classes.name}>{name}</span>
-        <span className={classes.divider}> / </span>
+        <span className={classes.dividerSymbol}> / </span>
         <span className={classes.status}>{status}</span>
       </section>
     </div>

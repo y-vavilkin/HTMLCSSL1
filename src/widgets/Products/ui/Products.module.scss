@@ -1,25 +1,12 @@
-@mixin flex-center-column($gap: 0) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: $gap;
-}
-
-@mixin flex-center($justify: center, $align: center) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-}
-
-@mixin typography($size, $weight, $line-height, $color) {
-  font-size: $size;
-  font-weight: $weight;
-  line-height: $line-height;
-  color: $color;
-}
+@import "src/mixins.scss";
 
 .container {
   @include flex-center-column(80px);
+
+  .divider {
+    height: 1px;
+    background-color: var(--background-color-divider);
+  }
 
   .start {
     @include flex-center-column(16px);

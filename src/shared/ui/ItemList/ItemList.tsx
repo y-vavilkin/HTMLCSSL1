@@ -16,7 +16,7 @@ export const ItemList = <T extends { text: string }>({
   list,
 }: IItemListProps<T>) => {
   return (
-    <div className={classes.container} tabIndex={0}>
+    <div className={classes.container}>
       <section className={classes.left}>
         <h4 className={classes.subtitle}>{subtitle}</h4>
         <h1 className={classes.title}>{title}</h1>

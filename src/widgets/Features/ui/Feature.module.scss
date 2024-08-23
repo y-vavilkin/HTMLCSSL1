@@ -1,15 +1,4 @@
-@mixin typography($size, $weight, $line-height, $color) {
-  font-size: $size;
-  font-weight: $weight;
-  line-height: $line-height;
-  color: $color;
-}
-
-@mixin flex-column($gap) {
-  display: flex;
-  flex-direction: column;
-  gap: $gap;
-}
+@import "src/mixins.scss";
 
 .container {
   @include flex-column(30px);
@@ -39,6 +28,13 @@
       align-items: center;
       text-align: center;
       width: 325px;
+      transition: transform 0.3s ease;
+
+      .image {
+        background-color: var(--background-color-footer-row-1);
+        width: 64px;
+        height: 64px;
+      }
 
       .title {
         @include typography(24px, 700, 34px, var(--text-color-primary));
@@ -46,6 +42,10 @@
 
       .description {
         @include typography(18px, 400, 27px, var(--text-color-secondary));
+      }
+
+      &:hover, &:focus {
+        transform: translateY(-2px);
       }
     }
   }

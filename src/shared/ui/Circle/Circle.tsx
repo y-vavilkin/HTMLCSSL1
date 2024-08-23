@@ -1,33 +1,13 @@
-import classes from "./Circle.module.css";
+import classes from "./Circle.module.scss";
 
 interface ICircleProps {
   src?: string;
-  width?: string;
-  height?: string;
-  backgroundColor?: string;
+  className?: string;
 }
 
-const INITIAL_VALUE = {
-  WIDTH: "32px",
-  HEIGHT: "32px",
-  BACKGROUND_COLOR: "#ffffff",
-};
-
-export const Circle = ({
-  src,
-  width = INITIAL_VALUE.WIDTH,
-  height = INITIAL_VALUE.HEIGHT,
-  backgroundColor = INITIAL_VALUE.BACKGROUND_COLOR,
-}: ICircleProps) => {
+export const Circle = ({ src, className }: ICircleProps) => {
   return (
-    <div
-      className={classes.circle}
-      style={{
-        width,
-        height,
-        backgroundColor,
-      }}
-    >
+    <div className={`${classes.circle} ${className}`}>
       <img src={src} alt="image" />
     </div>
   );

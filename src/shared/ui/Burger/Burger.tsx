@@ -1,4 +1,4 @@
-import classes from "./Burger.module.css";
+import classes from "./Burger.module.scss";
 
 export const Burger = () => {
   return (

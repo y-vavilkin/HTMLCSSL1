@@ -7,6 +7,23 @@
   .actionsDesktop {
     display: flex;
     gap: 30px;
+
+    .signIn {
+      width: 96px;
+      height: 40px;
+      color: var(--background-color-footer-row-1);
+
+      &:hover {
+        color: var(--white);
+      }
+    }
+
+    .signUp {
+      background-color: var(--background-color-footer-row-1);
+      width: 96px;
+      height: 40px;
+      color: var(--white);
+    }
   }
 }
 

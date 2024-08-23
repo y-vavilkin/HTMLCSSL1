@@ -1,7 +1,5 @@
 import { TData } from "../interfaces";
 
-export const GRAY = "#33363A";
-
 export const data: TData[] = [
   {
     subtitle: "More speed. Less spend",

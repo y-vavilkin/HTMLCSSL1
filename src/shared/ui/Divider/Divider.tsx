@@ -1,21 +1,9 @@
-import classes from "./Divider.module.css";
+import classes from "./Divider.module.scss";
 
 interface IDividerProps {
-  height?: string;
-  backgroundColor?: string;
+  className?: string;
 }
 
-export const Divider = ({
-  height,
-  backgroundColor,
-}: IDividerProps) => {
-  return (
-    <div
-      className={classes.container}
-      style={{
-        height,
-        backgroundColor,
-      }}
-    ></div>
-  );
+export const Divider = ({ className }: IDividerProps) => {
+  return <div className={`${classes.container} ${className}`}></div>;
 };

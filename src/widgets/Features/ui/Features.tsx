@@ -1,5 +1,5 @@
 import { Circle } from "@shared/ui";
-import { features, LIGHT_PURPLE } from "../const";
+import { features } from "../const";
 
 import classes from "./Feature.module.scss";
 
@@ -19,12 +19,7 @@ export const Features = () => {
         {features.map((item, index) => {
           return (
             <div key={index} className={classes.item} tabIndex={0}>
-              <Circle
-                src={item.image}
-                backgroundColor={LIGHT_PURPLE}
-                width="64px"
-                height="64px"
-              />
+              <Circle src={item.image} className={classes.image} />
               <h2 className={classes.title}>{item.title}</h2>
               <h3 className={classes.description}>{item.description}</h3>
             </div>

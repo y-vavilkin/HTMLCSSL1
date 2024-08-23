@@ -6,15 +6,15 @@
   justify-content: center;
   position: relative;
   transition: transform 0.3s ease;
-}
 
-.circle img {
-  width: 55%;
-  height: 55%;
-  position: absolute;
-}
+  img {
+    width: 55%;
+    height: 55%;
+    position: absolute;
+  }
 
-.circle:hover {
-  cursor: pointer;
-  transform: translateY(-2px);
+  &:hover, &:focus {
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
 }
