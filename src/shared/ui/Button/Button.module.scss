@@ -1,0 +1,13 @@
+.button {
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.1s ease-in;
+  border-radius: 2px;
+  z-index: 1;
+  border: none;
+  border: 1px solid none;
+
+  &:hover, &:focus {
+    transform: translateY(-2px);
+    background-color: var(--green) !important;
+  }
+}

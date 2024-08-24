@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 9px;
+
+    .subtitle {
+      font-family: "Architects Daughter", cursive;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: var(--dark-blue);
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 42px;
+      color: var(--light-gray);
+    }
+
+    .text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: var(--gray);
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+
+      .item {
+        display: flex;
+        gap: 9px;
+
+        .description {
+          font-weight: 400px;
+          font-size: 18px;
+          line-height: 27px;
+          color: var(--gray);
+        }
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+
+    .left {
+      align-items: center;
+      text-align: center;
+    }
+
+    .right {
+      img {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .container {
+    .right {
+      img {
+        width: 90%;
+      }
+    }
+  }
+}

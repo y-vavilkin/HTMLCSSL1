@@ -1,0 +1,38 @@
+@import "src/mixins.scss";
+
+.container {
+  @include flex-center-column(80px);
+
+  .divider {
+    height: 1px;
+    background-color: var(--light-black);
+  }
+
+  .start {
+    @include flex-center-column(16px);
+    text-align: center;
+    max-width: 770px;
+
+    .tag {
+      @include flex-center(center, center);
+      @include typography(14px, 600, 22px, var(--green));
+      width: 186px;
+      height: 30px;
+      border-radius: 70px;
+      background-color: var(--light-green);
+    }
+
+    .title {
+      @include typography(40px, 800, 50px, var(--light-gray));
+    }
+
+    .text {
+      @include typography(20px, 400, 30px, var(--gray));
+    }
+  }
+
+  .content {
+    width: 100%;
+    @include flex-center-column(80px);
+  }
+}

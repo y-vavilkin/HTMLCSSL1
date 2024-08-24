@@ -1,0 +1,25 @@
+@import "src/mixins.scss";
+
+.container {
+  @include flex-center-column(80px);
+
+  .description {
+    @include flex-center-column(16px);
+    text-align: center;
+
+    .title {
+      @include typography(40px, 800, 50px, var(--light-gray));
+    }
+
+    .subtitle {
+      @include typography(20px, 400, 30px, var(--gray));
+    }
+  }
+
+  .users {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

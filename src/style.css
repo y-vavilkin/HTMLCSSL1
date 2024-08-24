@@ -1,0 +1,29 @@
+:root {
+  --white: #ffffff;
+
+  --black: #25282c;
+  --light-black: #33363a;
+  --dark-black: #151719;
+
+  --blue: #8D8DFF;
+  --light-blue: #ababff;
+  --dark-blue: #5d5dff;
+
+  --gray: #9ba9b4;
+  --light-gray: #d9e3ea;
+
+  --green: #36a269;
+  --light-green: #c6f6d5;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

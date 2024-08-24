@@ -1,0 +1,201 @@
+@import "src/mixins.scss";
+
+.container {
+  @include flex-center-gap(column, space-between, stretch, 64px);
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .backgroundImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    z-index: 1;
+  }
+
+  .block1 {
+    @include flex-center-gap(row, space-between, center, 8px);
+    background-color: var(--dark-blue);
+    height: 206px;
+    padding: 0 48px;
+
+    .description {
+      @include flex-center-gap(column, center, center, 15px);
+      color: var(--white);
+      text-align: center;
+
+      .title {
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+
+    .actions {
+      @include flex-center-gap(row, center, center, 8px);
+
+      .input {
+        width: 320px;
+        height: 48px;
+        background-color: var(--dark-blue);
+        border-color: var(--blue);
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .subscribe {
+        font-size: 16px;
+        width: 139px;
+        height: 48px;
+        color: var(--dark-blue);
+        background-color: var(--white);
+
+        &:hover,
+        &:focus {
+          color: var(--white);
+        }
+      }
+    }
+  }
+
+  .block2 {
+    @include flex-center-gap(column, space-between, stretch);
+    min-height: 240px;
+    padding: 15px 0;
+
+    .row1 {
+      @include flex-center-gap(row, space-between, center);
+
+      .leftSide {
+        @include flex-center-gap(column, space-between, start, 20px);
+        width: 350px;
+
+        .description {
+          @include typography(16px, normal, 24px, var(--gray));
+        }
+      }
+
+      .rightSide {
+        @include flex-center-gap(row, space-between, stretch);
+        width: 600px;
+
+        .column {
+          @include flex-center-gap(column, flex-start, stretch, 4px);
+
+          .title {
+            @include typography(14px, 500, 22px, var(--light-gray));
+          }
+
+          .link {
+            @include typography(14px, 400, 22px, var(--gray));
+            transition: transform 0.3s ease;
+
+            &:hover,
+            &:focus {
+              cursor: pointer;
+              transform: translateX(+5px);
+            }
+          }
+        }
+      }
+    }
+
+    .row2 {
+      @include flex-center-gap(row, space-between, center);
+
+      p {
+        @include typography(14px, 500, 22px, var(--gray));
+      }
+
+      .links {
+        @include flex-center-gap(row, space-between, stretch);
+        width: 230px;
+
+        a {
+          transition: transform 0.3s ease;
+
+          .image {
+            background-color: var(--black);
+            width: 32px;
+            height: 32px;
+          }
+
+          &:hover,
+          &:focus {
+            cursor: pointer;
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    .block1 {
+      @include flex-center-gap(column, space-around, center, 25px);
+      height: max-content;
+      padding: 20px 48px;
+
+      .description {
+        align-items: center;
+        .subtitle {
+          text-align: center;
+        }
+      }
+    }
+
+    .block2 {
+      gap: 30px;
+      .row1 {
+        @include flex-center-gap(column, center, center, 30px);
+        .leftSide {
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    .block2 {
+      .row1 {
+        .rightSide {
+          @include flex-center-gap(column, center, center, 30px);
+          width: 100%;
+
+          .column {
+            align-items: center;
+
+            .link:hover, .link:focus {
+              transform: translateY(-3px);
+            }
+          }
+        }
+      }
+
+      .row2 {
+        @include flex-center-gap(column, center, center, 20px);
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .container {
+    .block1 {
+      .actions {
+        flex-direction: column;
+      }
+    }
+  }
+}

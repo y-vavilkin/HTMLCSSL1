@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+
+  .actionsDesktop {
+    display: flex;
+    gap: 30px;
+
+    .signIn {
+      width: 96px;
+      height: 40px;
+      color: var(--dark-blue);
+
+      &:hover {
+        color: var(--white);
+      }
+    }
+
+    .signUp {
+      background-color: var(--dark-blue);
+      width: 96px;
+      height: 40px;
+      color: var(--white);
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .container {
+    .actionsDesktop {
+      display: none;
+    }
+  }
+}

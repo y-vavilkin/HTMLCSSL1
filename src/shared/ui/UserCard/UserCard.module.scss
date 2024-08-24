@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 20px;
+  width: 352px;
+  padding: 24px;
+  background-color: var(--black);
+  transition: transform 0.3s ease;
+
+  .divider {
+    height: 1px;
+    background-color: var(--light-black);
+  }
+
+  .avatar {
+    position: relative;
+    width: 60px;
+
+    .avatarImage {
+      display: block;
+    }
+
+    .quotationMarks {
+      position: absolute;
+      right: 0;
+      width: 24px;
+      height: 18px;
+      z-index: 1;
+    }
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--gray);
+  }
+
+  .bio {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    .name {
+      color: var(--light-gray);
+    }
+
+    .dividerSymbol {
+      color: var(--light-black);
+    }
+
+    .status {
+      color: var(--dark-blue);
+      transition: color 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        color: var(--light-blue);
+      }
+    }
+  }
+
+  &:hover, &:focus {
+    transform: translateY(-2px);
+  }
+}

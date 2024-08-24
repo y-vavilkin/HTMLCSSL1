@@ -1,0 +1,52 @@
+@import "src/mixins.scss";
+
+.container {
+  @include flex-column(30px);
+
+  .description {
+    @include flex-column(44px);
+
+    .title {
+      @include typography(40px, 800, 50px, var(--light-gray));
+      text-align: center;
+    }
+
+    .text {
+      @include typography(20px, 400, 30px, var(--gray));
+      text-align: center;
+    }
+  }
+
+  .data {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    justify-items: center;
+    gap: 30px;
+
+    .item {
+      @include flex-column(16px);
+      align-items: center;
+      text-align: center;
+      width: 325px;
+      transition: transform 0.3s ease;
+
+      .image {
+        background-color: var(--dark-blue);
+        width: 64px;
+        height: 64px;
+      }
+
+      .title {
+        @include typography(24px, 700, 34px, var(--light-gray));
+      }
+
+      .description {
+        @include typography(18px, 400, 27px, var(--gray));
+      }
+
+      &:hover, &:focus {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
